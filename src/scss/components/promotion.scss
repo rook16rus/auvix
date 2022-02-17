@@ -1,0 +1,39 @@
+.promotion {
+  padding: 5.2rem 0;
+  margin: 0 0.8rem;
+  border-radius: 20px;
+  background-color: #91F49A;
+
+  &__caption {
+    display: flex;
+    align-items: center;
+    margin: 0 0 5.2rem;
+
+    font-size: 1.8rem;
+    line-height: 1.3;
+    color: #5B5E66;
+
+    &::before {
+      content: '';
+
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: 1.2rem;
+
+      background-color: #5B5E66;
+      border-radius: 50%;
+    }
+  }
+
+  &__title {
+    max-width: 47.2rem;
+    margin: 0 0 2rem;
+
+    @extend %fs-h2;
+    color: var(--dark);
+  }
+
+  &__text {
+    
+  }
+}

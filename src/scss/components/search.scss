@@ -1,0 +1,26 @@
+.search {
+  &__form {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    z-index: 1;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    padding: 1.6rem 6.4rem;
+    border-radius: 12px;
+    background: #F4F5F8;
+  }
+}

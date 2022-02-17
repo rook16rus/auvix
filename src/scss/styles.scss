@@ -6,6 +6,8 @@
 @import './global/global';
 @import './global/layout';
 
+@import "./components/search";
+@import "./components/language";
 @import './components/header';
 @import './components/footer';
 @import './components/accordion';
@@ -14,6 +16,7 @@
 @import './components/menu';
 @import './components/modal';
 @import './components/search-block';
+@import './components/promotion';
 
 
 
