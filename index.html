@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Заголовок">
+        <meta property="og:description" content="Описание">
+        <meta property="og:url" content="https://example.com/">
+        <meta property="og:image" content="https://via.placeholder.com/350x150">
+        <meta property="og:site_name" content="Бренд или имя сайта">
+        <meta property="og:locale" content="ru_RU">
+        <link rel="stylesheet" href="css/styles.min.css">
+        <link rel="stylesheet" href="assets/backend/backend.css">
+        <title>Главная страница компании Auvix</title>
+    </head>
+    <body class="no-touch" ontouchstart="">
+        <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <symbol viewBox="0 0 16 16" fill="none" id="search" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.995 7A5.999 5.999 0 111 7a5.999 5.999 0 1111.995 0z" stroke="#353940" stroke-width="2" />
+                    <path fill="#353940" d="M10.233 11.656l1.415-1.412 4.353 4.343L14.585 16z" />
+                </symbol>
+                <symbol viewBox="0 0 8 6" fill="none" id="select-arrow" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L0 0h8L4 6z" fill="#202226" />
+                </symbol>
+                <symbol viewBox="0 0 16 16" fill="none" id="user-navigation" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4a4 4 0 11-8 0 4 4 0 018 0z" fill="#202226" />
+                    <path d="M0 16l2-6h12l2 6H0z" fill="#202226" />
+                </symbol>
+            </svg>
+        </div>
+        <div class="page-content">
+
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__top">
+                            <a class="header__logo logo" href="#">
+                                <img class="logo__img" src="../../img/logo.svg" alt="">
+                            </a>
+                            <div class="header__search search">
+                                <form class="search__form">
+                                    <input class="search__input" type="text" placeholder="Поиск">
+                                </form>
+                            </div>
+                            <button class="header__user-navigation" type="button"></button>
+                        </div>
+                        <div class="header__bottom">
+                            <nav class="header__menu">
+                                <ul class="header__menu-list">
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">Каталог оборудования</a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">Коплексные решения</a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">Технологические услуги</a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">Академия экспертов</a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">О компании</a>
+                                    </li>
+                                    <li class="header__menu-item">
+                                        <a class="header__menu-link" href="#">Стать партнером</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__language">
+                                <select class="header__language-select" name="" id="">
+                                    <option value="RU">RU</option>
+                                    <option value="TAT">TAT</option>
+                                    <option value="ENG">ENG</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="page-main">
+                <section class="promotion">
+                    <div class="container">
+                        <div class="promotion__inner">
+                            <div class="promotion__text-column">
+                                <p class="promotion__caption">Акция</p>
+                                <h2 class="promotion__title section-title">Интерактивный комплект для образования</h2>
+                                <p class="promotion__text">Дополнительная скидка 10% в первый проект</p>
+                                <a class="promotion__button button" href="#">Подробнее</a>
+                            </div>
+                            <div class="promotion__slider-column"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <style>
+                .ie-placeholder {
+                    z-index: 4000;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #202020;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                }
+
+                .ie-placeholder__message {
+                    font-size: 2rem;
+                    line-height: 1.2;
+                    font-weight: 500;
+                    margin: auto;
+                }
+
+                @supports (display: grid) {
+                    .ie-placeholder {
+                        display: none;
+                    }
+                }
+            </style>
+            <div class="ie-placeholder">
+                <div class="ie-placeholder__message">Извините, ваш браузер не поддерживается</div>
+            </div>
+            <script src="js/app.js"></script>
+            <script src="assets/backend/backend.js"></script>
+        </div>
+
+    </body>
+</html>
