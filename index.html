@@ -45,14 +45,21 @@
                     <div class="header__inner">
                         <div class="header__top">
                             <a class="header__logo logo" href="#">
-                                <img class="logo__img" src="../../img/logo.svg" alt="">
+                                <img class="logo__img" src="./img/logo.svg" alt="Логотип">
                             </a>
                             <div class="header__search search">
-                                <form class="search__form">
-                                    <input class="search__input" type="text" placeholder="Поиск">
+                                <form class="search__form" name="searchForm">
+                                    <svg class="search__icon">
+                                        <use xlink:href="#search" />
+                                    </svg>
+                                    <input class="search__input" name="searchInput" type="text" placeholder="Поиск">
                                 </form>
                             </div>
-                            <button class="header__user-navigation" type="button"></button>
+                            <button class="header__user-navigation" type="button">
+                                <svg>
+                                    <use xlink:href="#user-navigation" />
+                                </svg>
+                            </button>
                         </div>
                         <div class="header__bottom">
                             <nav class="header__menu">
@@ -77,12 +84,18 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="header__language">
-                                <select class="header__language-select" name="" id="">
-                                    <option value="RU">RU</option>
-                                    <option value="TAT">TAT</option>
-                                    <option value="ENG">ENG</option>
-                                </select>
+                            <div class="header__language language">
+                                <div class="language__header">
+                                    <span class="language__current">RU</span>
+                                    <svg class="language__icon">
+                                        <use xlink:href="#select-arrow" />
+                                    </svg>
+                                </div>
+                                <div class="language__select">
+                                    <a class="language__item" href="#">RU</a>
+                                    <a class="language__item" href="#">TAT</a>
+                                    <a class="language__item" href="#">ENG</a>
+                                </div>
                             </div>
                         </div>
                     </div>
